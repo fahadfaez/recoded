@@ -1,0 +1,107 @@
+/* List three ways to select html elements in css */
+/* we can select based on name (all with same name) , id (#) and class (.)  */
+
+body {
+  background-color: #eee;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background-image: url('https://drive.google.com/uc?id=1ADdMAd8sSM1GxabjRUpJaqliyYQMxixu') ;
+  background-size: cover;
+  background-position: center;
+  color: #ccc;
+  display: flex;
+  /* What does 'display: flex' do?*/
+  /* A flex container expands items to fill available free space or shrinks them to prevent overflow */
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.buttons {
+  display: inline-flex ;
+      
+}
+
+.logo {
+  width: 100px;
+  margin: 40px;
+}
+
+.title {
+  margin: 40px;
+  padding: 15px;
+  border: dotted #ccc 5px;
+  border-radius: 15px;
+}
+
+.italic {
+  margin: 40px;
+  font-size: 24px;
+  /* px, em, and rem are 3 measurements units in CSS */
+  font-style: italic;
+}
+
+.bootcamp {
+  padding: 20px;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.bootcamp p,
+li {
+  margin: 10px;
+}
+
+#awesome {
+  display: none;
+}
+
+footer {
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+#searchBox {
+  margin: 0 auto;
+  display: inline-block;
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 5px;
+  border-color: #dda65f;
+}
+
+#searchBox::selection {
+  border-color: #3a7ddd;
+}
+
+infoBtn,
+#searchBtn,
+#awesomeBtn {
+  background-color: #dda65f;
+  /* add border color to match the background color */
+   /* it's already here :) */
+  border-color: #dda65f;
+  color: white;
+  margin: 0 auto;
+  display: inline-block;
+  font-size: 16px;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  
+  }
+
+/* Make the mouse curser look like a hand when you hover over the buttons (#infoBtn, #searchBtn, #awesomeBtn) and add backgound and border color of #3a7ddd*/
+/* Done */
+
+.socialIcon {
+  width: 25p;
+  margin: 0 10px;
+}
